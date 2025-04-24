@@ -23,9 +23,16 @@
       color: #222;
     }
 
+    .small-text {
+      font-size: 1rem;
+      color: #d77f00;
+      margin-top: 0.5rem;
+    }
+
     img {
-      width: 20%; /* Das Bild wird auf 50% der Breite seines Containers skaliert */
-      height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu bewahren */
+      width: 50%; /* Bild wird auf 50% der Breite seines Containers skaliert */
+      height: auto;
+      max-width: 400px; /* Maximale Breite, um es auf größeren Bildschirmen zu begrenzen */
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
@@ -38,20 +45,58 @@
 
     /* Unsichtbarer Button unter dem Bild */
     .invisible-button {
-      position: absolute; /* Positionierung relativ zum übergeordneten Container */
-      top: 56%; /* Position des Buttons, 80% von der Höhe des Bildes */
+      position: absolute;
+      top: 56%; /* Button unter dem Bild positionieren */
       left: 50%; /* Zentriert den Button */
-      transform: translateX(-50%); /* Damit der Button genau zentriert wird */
-      width: 100%; /* Die Breite des unsichtbaren Bereichs entspricht dem Bild */
-      height: 50px; /* Höhe des unsichtbaren Bereichs */
-      cursor: pointer; /* Zeigt den Mauszeiger an, dass es ein klickbarer Bereich ist */
-      background-color: transparent; /* Unsichtbarer Hintergrund */
+      transform: translateX(-50%);
+      width: 100%;
+      height: 50px;
+      cursor: pointer;
+      background-color: transparent;
     }
 
     .invisible-button a {
       display: block;
       width: 100%;
       height: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem; /* Kleinere Schriftgröße für Tablets */
+      }
+
+      .small-text {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
+      }
+
+      img {
+        width: 80%; /* Bild wird auf 80% der Breite des Bildschirms skaliert */
+        max-width: 100%; /* Bild passt sich der Bildschirmgröße an */
+      }
+
+      .invisible-button {
+        top: 60%; /* Button etwas weiter nach unten verschieben auf kleineren Geräten */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
+      }
+
+      .small-text {
+        font-size: 0.8rem; /* Noch kleinere Schriftgröße für den Text */
+      }
+
+      img {
+        width: 90%; /* Bild wird auf 90% der Breite des Bildschirms skaliert */
+      }
+
+      .invisible-button {
+        top: 65%; /* Button weiter nach unten verschieben für noch kleinere Bildschirme */
+      }
     }
   </style>
 </head>
