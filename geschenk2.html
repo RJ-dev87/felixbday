@@ -10,7 +10,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start; /* Damit der Inhalt oben bleibt */
+      justify-content: flex-start; /* Inhalt bleibt oben */
       height: 100vh;
       margin: 0;
       box-sizing: border-box;
@@ -20,21 +20,22 @@
       font-size: 2rem;
       margin-bottom: 0.5rem;
       color: #222;
+      margin-top: 2rem; /* Abstand nach oben erhöht */
     }
 
     .small-text {
       font-size: 1rem;
       color: #d77f00;
-      margin-top: 0.3rem;
+      margin-top: 0.5rem; /* Etwas mehr Abstand nach oben */
     }
 
     img {
-      width: 100%; /* Bild auf die volle Breite setzen */
+      width: 100%; /* Bild auf 100% der Breite setzen */
       height: auto; /* Höhe wird automatisch angepasst */
       max-width: 90%; /* Maximale Breite auf 90% setzen */
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-top: 0.5rem; /* Abstand nach oben */
+      margin-top: 2rem; /* Abstand zum Text erhöht */
     }
 
     p {
@@ -49,18 +50,19 @@
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
-        margin-top: 0; /* Weniger Abstand oben */
-        margin-bottom: 0.2rem; /* Weniger Abstand zum Bild */
+        margin-top: 1rem; /* Weniger Abstand oben */
+        margin-bottom: 0.5rem; /* Weniger Abstand zum Bild */
       }
 
       .small-text {
         font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
+        margin-top: 0.5rem;
       }
 
       img {
         width: 100%; /* Bild wird auf 100% der Breite gesetzt */
         height: auto; /* Höhe passt sich weiterhin automatisch an */
-        margin-top: 1rem; /* Etwas mehr Abstand nach oben */
+        margin-top: 2rem; /* Mehr Abstand nach oben */
       }
     }
 
@@ -68,6 +70,7 @@
     @media (max-width: 768px) {
       h1 {
         font-size: 1.8rem; /* Etwas kleinere Schriftgröße für Tablets */
+        margin-top: 1.5rem; /* Mehr Abstand zum oberen Rand */
       }
 
       img {
