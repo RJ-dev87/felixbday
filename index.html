@@ -34,6 +34,7 @@
       text-align: center;
       border-radius: 5px;
       border: 1px solid #aaa;
+      margin-bottom: 1rem;
     }
 
     button {
@@ -55,6 +56,55 @@
     #giftButton {
       margin-top: 1rem;
       display: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem; /* Kleinere Schriftgröße für Tablets */
+      }
+
+      p {
+        font-size: 1rem; /* Kleinere Schriftgröße für den Text */
+      }
+
+      input[type="text"] {
+        width: 80%; /* Eingabefeld wird breiter für kleinere Bildschirme */
+      }
+
+      button {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Button */
+        padding: 0.4rem 0.8rem; /* Kleinere Schaltfläche für Tablets */
+      }
+
+      #giftButton button {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Geschenkbutton */
+        padding: 0.4rem 0.8rem; /* Kleinere Schaltfläche für Tablets */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem; /* Noch kleinere Schriftgröße für Smartphones */
+      }
+
+      p {
+        font-size: 0.9rem; /* Noch kleinere Schriftgröße für den Text */
+      }
+
+      input[type="text"] {
+        width: 90%; /* Eingabefeld wird noch breiter */
+      }
+
+      button {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Button */
+        padding: 0.4rem 0.8rem; /* Kleinere Schaltfläche für Smartphones */
+      }
+
+      #giftButton button {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Geschenkbutton */
+        padding: 0.4rem 0.8rem; /* Kleinere Schaltfläche für Smartphones */
+      }
     }
   </style>
 </head>
