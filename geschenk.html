@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dein Geschenk 🎁</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    img {
+      width: 20%; /* Das Bild wird auf 50% der Breite seines Containers skaliert */
+      height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu bewahren */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Unsichtbarer Button unter dem Bild */
+    .invisible-button {
+      position: absolute; /* Positionierung relativ zum übergeordneten Container */
+      top: 58%; /* Position des Buttons, 80% von der Höhe des Bildes */
+      left: 50%; /* Zentriert den Button */
+      transform: translateX(-50%); /* Damit der Button genau zentriert wird */
+      width: 100%; /* Die Breite des unsichtbaren Bereichs entspricht dem Bild */
+      height: 50px; /* Höhe des unsichtbaren Bereichs */
+      cursor: pointer; /* Zeigt den Mauszeiger an, dass es ein klickbarer Bereich ist */
+      background-color: transparent; /* Unsichtbarer Hintergrund */
+    }
+
+    .invisible-button a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Tadaaa! Dein Geschenk!</h1>
+  <p class="small-text">Scherz, drück den roten Schlüppi...</p>
+  <img src="skinny.png" alt="Geschenkbild" />
+  
+  <!-- Unsichtbarer Button -->
+  <div class="invisible-button">
+    <a href="geschenk2.html"></a>
+  </div>
+
+</body>
+</html>
