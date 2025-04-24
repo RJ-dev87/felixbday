@@ -4,77 +4,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dein Geschenk 🎁</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #fffbe7;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start; /* Inhalt bleibt oben */
-      height: 100vh;
+      justify-content: flex-start;
+      padding-top: 1rem;
       margin: 0;
-      box-sizing: border-box;
+      height: 100vh;
+      text-align: center;
     }
 
     h1 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin: 0.5rem 0 0.2rem;
       color: #222;
-      margin-top: 1rem; /* Weniger Abstand nach oben */
     }
 
     .small-text {
       font-size: 1rem;
       color: #d77f00;
-      margin-top: 0.3rem; /* Weniger Abstand nach oben für den Text */
+      margin: 0 0 0.5rem;
     }
 
     img {
-      width: 80%; /* Bild auf 80% der Breite setzen */
-      height: auto; /* Höhe wird automatisch angepasst */
-      max-width: 80%; /* Maximale Breite auf 80% setzen */
+      width: 80%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-top: 4rem; /* Bild weiter nach unten verschieben */
+      margin-bottom: 2rem; /* Geringerer Abstand zum unteren Bildschirmrand */
     }
 
-    p {
-      margin-top: 1rem;
-      font-size: 1rem;
-      color: #555;
-    }
-
-    /* Media Queries für responsives Design */
-
-    /* Smartphones (max. 600px) */
+    /* Responsive Anpassungen */
     @media (max-width: 600px) {
       h1 {
-        font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
-        margin-top: 1rem; /* Weniger Abstand nach oben */
-        margin-bottom: 0.5rem; /* Weniger Abstand zum Bild */
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
       }
 
       .small-text {
-        font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
-        margin-top: 0.3rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
       }
 
       img {
-        width: 90%; /* Bild wird auf 90% der Breite gesetzt */
-        height: auto; /* Höhe passt sich weiterhin automatisch an */
-        margin-top: 3rem; /* Mehr Abstand nach oben */
-      }
-    }
-
-    /* Tablets (max. 768px) */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem; /* Etwas kleinere Schriftgröße für Tablets */
-        margin-top: 1.5rem; /* Mehr Abstand zum oberen Rand */
-      }
-
-      img {
-        width: 75%; /* Bild wird auf 75% der Breite gesetzt */
+        width: 90%;
+        margin-bottom: 1rem; /* Noch kompakter auf kleineren Screens */
       }
     }
   </style>
@@ -84,6 +66,6 @@
   <h1>DAS ist dein Geschenk!</h1>
   <p class="small-text">2x Daypass im Crunchfit (mit Reimo & Frank lol)</p>
   <img src="strong.png" alt="Geschenkbild" />
-  
+
 </body>
 </html>
