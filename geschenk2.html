@@ -10,30 +10,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      text-align: center;
+      justify-content: flex-start; /* Damit der Inhalt oben bleibt */
       height: 100vh;
+      margin: 0;
       box-sizing: border-box;
     }
 
     h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: #222;
     }
 
     .small-text {
       font-size: 1rem;
       color: #d77f00;
-      margin-top: 0.5rem;
+      margin-top: 0.3rem;
     }
 
     img {
-      width: 50%; /* Standardbildgröße */
-      height: auto;
+      width: 100%; /* Bild auf die volle Breite setzen */
+      height: auto; /* Höhe wird automatisch angepasst */
+      max-width: 90%; /* Maximale Breite auf 90% setzen */
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-top: 0.5rem; /* Abstand nach oben */
     }
 
     p {
@@ -48,17 +49,18 @@
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
-        margin-bottom: 0.3rem; /* Noch weniger Abstand nach unten */
-        margin-top: -1rem; /* Etwas nach oben verschoben */
+        margin-top: 0; /* Weniger Abstand oben */
+        margin-bottom: 0.2rem; /* Weniger Abstand zum Bild */
       }
 
       .small-text {
         font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
-        margin-top: -0.5rem; /* Auch den Abstand nach oben verringern */
       }
 
       img {
-        width: 100%; /* Bild wird auf 90% der Breite gesetzt */
+        width: 100%; /* Bild wird auf 100% der Breite gesetzt */
+        height: auto; /* Höhe passt sich weiterhin automatisch an */
+        margin-top: 1rem; /* Etwas mehr Abstand nach oben */
       }
     }
 
@@ -66,11 +68,10 @@
     @media (max-width: 768px) {
       h1 {
         font-size: 1.8rem; /* Etwas kleinere Schriftgröße für Tablets */
-        margin-top: -0.5rem; /* Auch hier etwas nach oben verschoben */
       }
 
       img {
-        width: 70%; /* Bild wird auf 70% der Breite gesetzt */
+        width: 80%; /* Bild wird auf 80% der Breite gesetzt */
       }
     }
   </style>
