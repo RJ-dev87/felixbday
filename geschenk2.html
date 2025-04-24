@@ -30,7 +30,7 @@
     }
 
     img {
-      width: 20%; /* Das Bild wird auf 50% der Breite seines Containers skaliert */
+      width: 50%; /* Standardbildgröße */
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -61,6 +61,43 @@
       background-color: #c66900; /* Etwas dunklerer Farbton beim Hover */
     }
 
+    /* Media Queries für responsives Design */
+
+    /* Smartphones (max. 600px) */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
+      }
+
+      .small-text {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
+      }
+
+      img {
+        width: 80%; /* Bild wird auf 80% der Breite gesetzt */
+      }
+
+      .back-button {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Button */
+        padding: 8px 16px; /* Etwas kleinere Schaltfläche */
+      }
+    }
+
+    /* Tablets (max. 768px) */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem; /* Etwas kleinere Schriftgröße für Tablets */
+      }
+
+      img {
+        width: 70%; /* Bild wird auf 70% der Breite gesetzt */
+      }
+
+      .back-button {
+        font-size: 1rem; /* Normale Schriftgröße für den Button */
+        padding: 10px 20px; /* Normale Schaltfläche */
+      }
+    }
   </style>
 </head>
 <body>
