@@ -4,66 +4,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dein Geschenk 🎁</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #fffbe7;
-      margin: 0;
-      padding: 1rem;
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* Abstand zwischen Text und Bild */
       align-items: center;
+      justify-content: center;
+      padding: 2rem;
       text-align: center;
+      height: 100vh;
+      box-sizing: border-box;
     }
 
     h1 {
       font-size: 2rem;
-      margin: 0.5rem 0 0.2rem;
+      margin-bottom: 1rem;
       color: #222;
     }
 
     .small-text {
       font-size: 1rem;
       color: #d77f00;
-      margin: 0;
+      margin-top: 0.5rem;
     }
 
     img {
-      width: 80%;
+      width: 70%; /* Bild wird auf 50% der Breite seines Containers skaliert */
       height: auto;
+      max-width: 400px; /* Maximale Breite, um es auf größeren Bildschirmen zu begrenzen */
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    @media (max-width: 600px) {
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
       h1 {
-        font-size: 1.5rem;
-        margin: 0.5rem 0 0.2rem;
+        font-size: 1.8rem; /* Kleinere Schriftgröße für Tablets */
       }
 
       .small-text {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
       }
 
       img {
-        width: 90%;
+        width: 80%; /* Bild wird auf 80% der Breite des Bildschirms skaliert */
+        max-width: 100%; /* Bild passt sich der Bildschirmgröße an */
+      }
+
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
+      }
+
+      .small-text {
+        font-size: 0.8rem; /* Noch kleinere Schriftgröße für den Text */
+      }
+
+      img {
+        width: 90%; /* Bild wird auf 90% der Breite des Bildschirms skaliert */
+      }
+
+      .invisible-button {
+        top: 65%; /* Button weiter nach unten verschieben für noch kleinere Bildschirme */
       }
     }
   </style>
 </head>
 <body>
 
-  <div>
-    <h1>DAS ist dein Geschenk!</h1>
-    <p class="small-text">2x Daypass im Crunchfit (mit Reimo & Frank lol)</p>
-  </div>
-
+  <h1>DAS ist dein Geschenk!</h1>
+  <p class="small-text">2x Daypass im Crunchfit (mit Reimo & Frank lol).</p>
   <img src="strong.png" alt="Geschenkbild" />
-
+  
 </body>
 </html>
