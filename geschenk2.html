@@ -11,60 +11,58 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #fffbe7;
+      margin: 0;
+      padding: 1rem;
+      height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: space-between; /* Abstand zwischen Text und Bild */
       align-items: center;
-      justify-content: flex-start;
-      padding-top: 1rem;
-      margin: 0;
-      height: 100vh;
       text-align: center;
     }
 
     h1 {
       font-size: 2rem;
-      margin: 0.5rem 1rem;
+      margin: 0.5rem 0 0.2rem;
       color: #222;
     }
 
     .small-text {
       font-size: 1rem;
       color: #d77f00;
-      margin: 0 0 0.5rem;
+      margin: 0;
     }
 
     img {
-      width: 70%;
+      width: 80%;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-bottom: 0.5rem; /* Geringerer Abstand zum unteren Bildschirmrand */
     }
 
-    /* Responsive Anpassungen */
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.2rem;
+        margin: 0.5rem 0 0.2rem;
       }
 
       .small-text {
         font-size: 0.9rem;
-        margin-bottom: 0.4rem;
       }
 
       img {
-        width: 80%;
-        margin-bottom: 1rem; /* Noch kompakter auf kleineren Screens */
+        width: 90%;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>DAS ist dein Geschenk!</h1>
-  <p class="small-text">2x Daypass im Crunchfit (mit Reimo & Frank lol)</p>
+  <div>
+    <h1>DAS ist dein Geschenk!</h1>
+    <p class="small-text">2x Daypass im Crunchfit (mit Reimo & Frank lol)</p>
+  </div>
+
   <img src="strong.png" alt="Geschenkbild" />
 
 </body>
