@@ -124,20 +124,30 @@
   <script>
     function checkAge() {
       const input = document.getElementById("ageInput").value.trim();
+      const age = parseInt(input, 10);
       const messageDiv = document.getElementById("message");
       const giftButton = document.getElementById("giftButton");
 
-      if (input === "18") {
+      if (isNaN(age)) {
+        messageDiv.innerHTML = "❌ Bitte gib eine gültige Zahl ein.";
+        messageDiv.style.color = "red";
+        giftButton.style.display = "none";
+      } else if (age === 18) {
         messageDiv.innerHTML = "Richtig! 🎁 Herzlichen Glückwunsch!";
         messageDiv.style.color = "green";
         giftButton.style.display = "block";
+      } else if (age < 18) {
+        messageDiv.innerHTML = "❌ Leider zu niedrig, versuch es erneut.";
+        messageDiv.style.color = "red";
+        giftButton.style.display = "none";
       } else {
-        messageDiv.innerHTML = "❌ Leider falsch, versuch es erneut.";
+        messageDiv.innerHTML = "❌ Leider zu hoch, versuch es erneut.";
         messageDiv.style.color = "red";
         giftButton.style.display = "none";
       }
     }
   </script>
+
 
 </body>
 </html>
