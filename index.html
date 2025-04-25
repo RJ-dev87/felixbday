@@ -137,11 +137,11 @@
         messageDiv.style.color = "green";
         giftButton.style.display = "block";
       } else if (age < 18) {
-        messageDiv.innerHTML = "❌ Leider zu niedrig, versuch es erneut.";
+        messageDiv.innerHTML = "❌ Leider <u>zu niedrig</u>, versuch es erneut.";
         messageDiv.style.color = "red";
         giftButton.style.display = "none";
       } else {
-        messageDiv.innerHTML = "❌ Leider zu hoch, versuch es erneut.";
+        messageDiv.innerHTML = "❌ Leider <u>zu hoch</u>, versuch es erneut.";
         messageDiv.style.color = "red";
         giftButton.style.display = "none";
       }
