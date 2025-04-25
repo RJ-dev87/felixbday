@@ -15,6 +15,7 @@
       text-align: center;
       height: 100vh;
       box-sizing: border-box;
+      position: relative;
     }
 
     h1 {
@@ -30,9 +31,9 @@
     }
 
     img {
-      width: 70%; /* Bild wird auf 50% der Breite seines Containers skaliert */
+      width: 70%;
       height: auto;
-      max-width: 400px; /* Maximale Breite, um es auf größeren Bildschirmen zu begrenzen */
+      max-width: 400px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
@@ -42,39 +43,42 @@
       font-size: 1rem;
       color: #555;
     }
-  
-    /* Responsive Design */
+
+    .footer-note {
+      position: fixed;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.8rem; /* Kleinere Schriftgröße für Tablets */
+        font-size: 1.8rem;
       }
 
       .small-text {
-        font-size: 0.9rem; /* Kleinere Schriftgröße für den Text */
+        font-size: 0.9rem;
       }
 
       img {
-        width: 80%; /* Bild wird auf 80% der Breite des Bildschirms skaliert */
-        max-width: 100%; /* Bild passt sich der Bildschirmgröße an */
+        width: 80%;
+        max-width: 100%;
       }
-
     }
 
     @media (max-width: 480px) {
       h1 {
-        font-size: 1.5rem; /* Kleinere Schriftgröße für Smartphones */
+        font-size: 1.5rem;
       }
 
       .small-text {
-        font-size: 0.8rem; /* Noch kleinere Schriftgröße für den Text */
+        font-size: 0.8rem;
       }
 
       img {
-        width: 90%; /* Bild wird auf 90% der Breite des Bildschirms skaliert */
-      }
-
-      .invisible-button {
-        top: 65%; /* Button weiter nach unten verschieben für noch kleinere Bildschirme */
+        width: 90%;
       }
     }
   </style>
@@ -84,6 +88,10 @@
   <h1>DAS ist dein Geschenk!</h1>
   <p class="small-text">3x Daypass im Crunchfit (mit Reimo & Frank lol)</p>
   <img src="strong.png" alt="Geschenkbild" />
-  
+
+  <div class="footer-note">
+    Alles Gute von Giuli, Reimo & Frank ❤
+  </div>
+
 </body>
 </html>
